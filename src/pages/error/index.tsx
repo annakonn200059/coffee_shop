@@ -1,4 +1,6 @@
 import React from 'react'
+import { CenterLayout } from 'components/layout/centerPosition'
+
 export const ErrorPage = () => {
-  return <>404</>
+  return <CenterLayout>404</CenterLayout>
 }

@@ -4,9 +4,15 @@ code {
 }
 
 *{
-  font-family: Golos, sans-serif;
+  font-family: Roboto, sans-serif;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +23,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#root {
+  height: 100%;
+}
+
 ol, ul {
   list-style: none;
 }
