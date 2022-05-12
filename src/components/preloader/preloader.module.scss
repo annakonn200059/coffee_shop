@@ -1,0 +1,30 @@
+@import 'src/constants/colors';
+
+.loader{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient($background-grey, transparent);
+  animation: rotating 1s linear infinite;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
